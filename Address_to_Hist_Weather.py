@@ -122,7 +122,7 @@ Address_Header = input("Address Header (ex: 'Address'): ")
 Local_Save_Path = input("Where to store csv files locally (ex: '/Output_CSVs/Dom/'): ")
 #Local_Save_Path = '/Users/mborrus/Benchmark/Jupyter/Output_CSVs/Dom/'
 AWS_Save_Path = input("Where to save within AWS bucket (ex: 'Domestic'): ")
-AWS_Save_Path = 'Domestic_Test'
+#AWS_Save_Path = 'Domestic_Test'
 Save_File_Name_Column = 'Landmark'
 
 if not os.path.isdir(Local_Save_Path):
