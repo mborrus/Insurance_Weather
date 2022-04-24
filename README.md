@@ -2,6 +2,31 @@
 Historical weather via addresses 
 
 If we have a list of X addresses, can we automate or run a batch process that uses street addresses to find the closest weather stations, pull their historical data, and export it as CSVs. 
+## Quick Start Guide:
+1. Clone this repo `git clone ...`
+2. Install necessary libaries and packages (see intro of .py file)
+3. `python Address_to_Hist_Weather.py`
+4. Answer the questions
+- Address_File Path: The path to the address csv `./TestAddresses.csv`
+- Address Header: The column where the addresses are stored (`Address (google maps)`) 
+- Where to store csv files locally: The path to the save folder (`./Output_CSVs/Test/`)
+- Where to save within AWS bucket: Name of the folder within the bucket (`Domestic`) 
+5. You should see output:
+```
+0
+Salesforce Tower
+Latitude for the index = (37.78977435, -122.3969321220982)
+Upload Successful
+1
+Empire State Building
+Latitude for the index = (40.7486538125, -73.98530431249999)
+Upload Successful
+2
+San Diego Zoo
+Latitude for the index = (32.73788656954161, -117.14883175408295)
+Upload Successful
+```
+
 ## Approach:
 Create a list of 10 random addresses in a spreadsheet
 Load the addresses into python
