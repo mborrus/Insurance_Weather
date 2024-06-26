@@ -1,4 +1,11 @@
-# Insurance_Weather
+# Background
+This was a project I did as a proof-of-concept for a client during my time as Benchmark. Given a list of coordinates (supermarkets, data centers, hospitals), how quickly can we retrieve historical climate data from the closest weather station. In the end I provide an outlook on high heat days over a 10 year period for these location.
+
+![download (4)](https://github.com/mborrus/Insurance_Weather/assets/38109796/384bd12a-0b08-4b9a-989b-f2f6166b5175)
+
+This is now retained on my github as a portfolio project. I hope you find it interesting! 
+
+# Insurance Weather
 Historical weather via addresses 
 
 If we have a list of X addresses, can we automate or run a batch process that uses street addresses to find the closest weather stations, pull their historical data, and export it as CSVs. 
