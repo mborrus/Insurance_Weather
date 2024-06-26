@@ -130,7 +130,7 @@ if not os.path.isdir(Local_Save_Path):
 
 Address_Info = CSV_to_latlon(Address_File,Address_Header)
 for addy in Address_Info.index:
-    test_key = Login("superadmin","VrYAK#2Kfe") #Log in as super admin
+    test_key = Login("{account_name}","{password}") #Log in as super admin
     test_output = Get_Data(test_key,Address_Info['geo_location'].loc[addy].latitude,Address_Info['geo_location'].loc[addy].longitude, stations = 3) #Get data from first address
     output = CSV_to_DF(test_output); #Save the data as a dataframe and display the data
     Filename = str(Local_Save_Path + Address_Info[Save_File_Name_Column][addy] +'.csv')
